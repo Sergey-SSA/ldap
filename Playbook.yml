@@ -1,0 +1,11 @@
+---
+- hosts: ipaServer
+  become: yes
+  roles:
+   - freeipa-server
+     
+- hosts: ipaClient
+  become: yes
+  roles:
+   - freeipa-client
+
